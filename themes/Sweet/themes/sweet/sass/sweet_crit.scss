@@ -1,0 +1,58 @@
+// Lädt Critical CSS aus dem Parent Template
+// Lädt Core-Funktionen
+@import '../../../../Remake/themes/base/sass/functions';
+@import "variables";
+@import "../../../../Remake/themes/clean/sass/clean_crit";
+
+
+// Custom styles
+@import "custom_crit";
+
+.sweet {
+    @import '../../base/sweeticons/scss/sweeticons.scss';
+    .fa-sup {
+        background-color: $navbar-link-icon-badge-color;
+        color: $white;
+    }
+    header {
+        .navbar {
+            .dropdown-menu {
+                border-radius: 0 0 $border-radius $border-radius;
+            }
+        }
+        .nav-right > .nav-item > .nav-link {
+            color: $primary;
+            &:hover {
+                color: $black;
+            }
+        }
+        @include media-breakpoint-down(md) {
+            .nav-mobile-body {
+                width: 100%;
+            }
+        }
+        .search-wrapper {
+            @include media-breakpoint-up(xl) {
+                position: relative;
+            }
+            .ta-lightsearch-container {
+                margin-top: 0;
+            }
+            .ta-lightsearch-results {
+                border-radius: 0 0 $border-radius $border-radius;
+            }
+        }
+    }
+
+    #footer {
+       .productlist-filter-headline {
+            @include media-breakpoint-up(xl) {
+                font-size: 1.2em;
+                margin-bottom: .5rem;
+            }
+            &::after {
+                height: 0;
+            }
+        }
+    }
+}

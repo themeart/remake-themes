@@ -1,0 +1,157 @@
+// Lädt Critical CSS aus dem Parent Template
+// Lädt Core-Funktionen
+@import '../../../../Remake/themes/base/sass/functions';
+@import "variables";
+@import "../../../../Remake/themes/clean/sass/clean_crit";
+
+.parfe {
+    .badge-secondary {
+        background-color: $primary-lighter;
+    }
+    .basket-payment-icons {
+        margin-bottom: 1rem;
+        img {
+            max-height: 40px;
+        }
+    }
+    .fa-sup {
+        background-color: $black;
+    }
+    .ribbon-10 {
+        border: 1px solid $ribbon-color-10;
+    }
+    header {
+        .form-control:focus {
+            box-shadow: none;
+        }
+        @include media-breakpoint-up(lg) {
+            .dropdown-menu {
+                border-radius: 0 0 $border-radius $border-radius;
+            }
+            &.full-width-mega {
+                .navbar-nav {
+        			> .nav-item {
+        			    &.active,
+        			    &:hover {
+        			        > .nav-link { 
+        					    background-color: $navbar-link-hover-bg-color;
+        					    color: $navbar-link-hover-color;
+        					    border-radius: $border-radius $border-radius 0 0;
+        				    }
+        			    }
+        				> .nav-link { 
+        				    padding: $navbar-nav-link-padding-y * .75 $navbar-nav-link-padding-x * 1.25; 
+        					font-weight: $font-weight-bold;
+        					&.dropdown-toggle::after {
+        					    content: '' !important;
+        					}
+        				}
+        				&.nav-home-button {
+        				    margin-right: map-get($spacers, 4);
+        				    > .nav-link {
+                                padding-top: map-get($spacers, 1) !important;
+                                padding-bottom: map-get($spacers, 1) !important;
+                                &:hover {
+                                    background-color: transparent;
+                                }
+                                .nav-logo {
+                                    max-height: 40px;
+                                }
+        				    }
+                        }
+        			}
+                }
+                .nav-right {
+        			.nav-item {
+        			    &.cart-icon-dropdown {
+        			        .lg-min-w-lg {
+        			            min-width: rem(400px);
+        			        }
+            			    .cart-icon-dropdown-icon {
+            			        font-size: 1.1em;
+            			    }
+        			    }
+        			    &:not(.cart-icon-dropdown) {
+        			        .nav-label {
+                                padding-left: 0;
+                                display: block;
+                            }
+        			    }
+        				.nav-link {
+        				    text-align: center;
+        					padding-top: $navbar-nav-link-padding-y * 1.3;
+        					padding-bottom: $navbar-nav-link-padding-y * 1.3;
+        					&:hover {
+                                padding-top: calc(1.3rem - 2px);
+                                padding-bottom: calc(1.3rem + 2px);
+                             }
+        				}
+        			}
+        		}
+            }
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        .sidepanel-left .box {
+            background-color: $aside-bg-color;
+            border-radius: $border-radius;
+            .btn-filter-box, 
+            .productlist-filter-headline {
+                font-size: $h3-font-size;
+            }
+            .badge-outline-secondary,
+            .snippets-filter-show-all .btn {
+                color: $black;
+                background-color: lighten($aside-bg-color,5%);
+            }
+        }
+        body[data-page="1"] {
+            #tabAccordion {
+                .card {
+                    border: 1px solid $accent;
+                    margin-bottom: map-get($spacers, 4);
+                    border-radius: $border-radius !important;
+                }
+            }
+        }
+    }
+    .contact-bar-wrapper {
+        &:not(.compact) {
+            border-top: 1px solid rgba($footer-color,.05);
+        }
+        .btn-primary {
+            background-color: transparent;
+            border-color: $black;
+            color: $black;
+            &:hover {
+                background-color: $black;
+                border-color: $black;
+                color: $white;
+            }
+        }
+    }
+    #footer {
+        @include media-breakpoint-up(lg) {
+            .productlist-filter-headline {
+                margin-bottom: map-get($spacers, 2);
+                &::after {
+                    height: 0;
+                }
+            }
+            .productlist-filter-headline, 
+        	.box-normal .box-normal-link {
+        		font-weight: $font-weight-bold;
+        		font-size: $h3-font-size;
+        	}
+        }
+        #footer-boxes {
+		    .footer-social-media a.btn {
+		        color: $footer-bg-color;
+		    }
+        }
+    }
+}
+
+
+// Custom styles
+@import "custom_crit";

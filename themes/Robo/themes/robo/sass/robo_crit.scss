@@ -1,0 +1,83 @@
+// Lädt Critical CSS aus dem Parent Template
+// Lädt Core-Funktionen
+@import '../../../../Remake/themes/base/sass/functions';
+@import "variables";
+@import "../../../../Remake/themes/clean/sass/clean_crit";
+
+// Custom styles
+@import "custom_crit";
+
+// -- theme specific ---
+
+.robo {
+    header {
+        .fa-sup {
+            display: none;
+        }
+        @include media-breakpoint-up(xl) {
+            .search-wrapper {
+                min-width: $header-search-width;
+            }
+        }
+        @include media-breakpoint-up(lg) {
+            border-top: $header-border-bottom-width solid $header-border-bottom-color;
+            #search {
+                background-color: darken($header-bg-color,7%) !important;
+                .form-control::placeholder {
+                    color: $header-search-color;
+                }
+            }
+            .dropdown-menu:not(.categories-recursive-dropdown) {
+                border-bottom: 3px solid $primary;
+            }
+            .navbar-brand {
+                margin-right: map-get($spacers, 5);
+                padding-top: map-get($spacers, 2);
+                padding-bottom: map-get($spacers, 2);
+            }
+        }
+        @include media-breakpoint-up(md) {
+            .nav-right > div {
+                &::before {
+                    border-left: 1px solid darken($header-bg-color,10%);
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            .toggler-logo-wrapper {
+                position: relative;
+                &::before {
+                    border-right: 1px solid darken($header-bg-color,10%);
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            .nav-right {
+                .search .search-wrapper .form-control {
+                    height: auto;
+                    padding-top: $navbar-nav-link-padding-y;
+                    padding-bottom: $navbar-nav-link-padding-y;
+                }
+                > div {
+                    position: relative;
+                    padding-left: map-get($spacers, 2);
+                    padding-right: map-get($spacers, 2);
+                }
+                &:not(.cart-icon-dropdown) {
+        			 .nav-label {
+                        display: inline-block;
+                    }
+        		}
+            }
+        }
+    }
+    .footer-logo {
+        filter: invert(100%);
+    }
+}

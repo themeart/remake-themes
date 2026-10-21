@@ -1,0 +1,290 @@
+// colors
+
+$accent:                            #eeeeee;
+$gray-lighter:                      #f2f2f2;
+$gray-light:                        #9b9b9b;
+$gray:                              #707070;
+$gray-dark:                         #202020;
+$gray-medium:                       #e2e2e2;
+$gray-darker:                       #525252;
+$sand:                              #ebebeb;
+$cool-white:                        #f8f8f8;
+$primary:                           #197AF8;
+$secondary:                         darken($accent,8%);
+$success:                           #1C7B36;
+$bg-success:                        #cee8d1;
+$info:                              darken($primary,10%);
+$bg-info:                           #E6F7FD;
+$warning:                           #f39932;
+$bg-warning:                        #F9F2DC;
+$danger:                            #b90000;
+$bg-danger:                         #E8CCD2;
+$bg-main:                           $gray-lighter;
+$bg-main-ligther:                   $bg-main;
+$bg-config-recommendation:          lighten($primary,40%);
+
+$gold:                              #F49D1A;
+
+$white:                             #ffffff;
+$black:                             #000000;
+
+$primary-lighter:                   $bg-info;
+
+$dark:                              $gray-dark;
+$gray-100:                          $gray-lighter;
+$gray-500:                          $gray-light;
+$gray-600:                          $gray;
+$gray-700:                          $gray-dark;
+
+$text-muted:                        $gray;
+$text-muted-header:                 $text-muted;
+
+$yiq-text-dark:                     $black;
+
+// Image ratio
+// 1 = rectangle, 1.33 = portrait
+
+$product-image-ratio:               1;
+
+// Font size
+
+$font-size-base:                    rem(15px);
+$font-size-xs:                      rem(14px);
+$font-size-sm:                      rem(14px);
+$font-size-lg:                      rem(18px);
+$font-size-ribbons:                 rem(12px);
+
+$font-weight-normal:                400;
+$font-weight-semibold:              500;
+$font-weight-bold:                  600;
+
+// Links
+
+$link-color:                        $black;
+$link-decoration:                   underline;
+$link-hover-color:                  $primary;
+$link-hover-decoration:             none;
+
+// Buttons
+
+$btn-box-shadow:                    none;
+$btn-active-box-shadow:             none;
+$btn-focus-box-shadow:              none;
+
+// Inputs = Buttons
+
+$input-btn-padding-y:               rem(6px);
+$input-btn-padding-x:               rem(10px);
+
+$input-btn-padding-y-sm:            rem(3px);
+$input-btn-padding-x-sm:            rem(10px);
+
+// Button borders
+
+$border-radius:                     0rem;
+$border-radius-lg:                  $border-radius;
+$border-radius-sm:                  $border-radius;
+$border-color:                      #BFE9F9;
+
+// heading
+
+$h1-font-size:                      rem(26px);
+$h2-font-size:                      rem(22px);
+$h3-font-size:                      rem(18px);
+$h4-font-size:                      $font-size-base;
+$h5-font-size:                      $font-size-base;
+$h6-font-size:                      $font-size-base;
+
+// Layout
+
+$layout-boxed-bg-color:             $gray-lighter;
+$layout-boxed-border-width:         0 1px 0 1px;
+$layout-boxed-border-color:         $gray-medium;
+
+// Topbar
+
+$topbar-bg-color:                   $black;
+$topbar-color:                      darken($white,25%);
+$topbar-color-hover:                $white;
+$topbar-link-size:                  1em;
+
+// Header
+
+$header-bg-color:                   #A8E7FF;
+$header-color:                      $black;
+$header-color-hover:                $primary;
+
+$header-bg-color-secondary:         $gray-lighter;
+$header-color-secondary:            $text-muted-header;
+$header-border-bottom-width:        1px;
+$header-border-bottom-color:        darken($header-bg-color,10%);
+$header-box-shadow:                 0 0.125rem 1rem 0.125rem rgba($black,.1);
+
+// Logo
+
+$navbar-image-height:               rem(18px);
+$navbar-image-height-lg:            rem(20px);
+
+// Search
+
+$header-search-width:               auto;
+$header-search-bg-color:            transparent !important;
+$header-search-border-width:        0 0 0 0;
+$header-search-border-color:        #ddd;
+$header-search-color:               $black;
+
+$header-search-btn-bg-color:        $header-search-bg-color;
+$header-search-btn-border-width:    $header-search-border-width;
+$header-search-btn-border-color:    $header-search-border-color;
+$header-search-btn-color:           $black;
+
+// Navigation
+
+$navbar-wrapper-bg-color:           $header-bg-color;
+
+$navbar-link-color:                 $black;
+$navbar-link-size:                  1.1em;
+$navbar-link-weight:                $font-weight-normal;
+$navbar-link-icon-size:             1.5em;
+$navbar-link-icon-size-sm:          1.4em;
+
+$navbar-nav-link-padding-x:         .75rem;
+$navbar-nav-link-padding-y:         .85rem;
+
+// Navigation one col menu
+
+$navbar-one-col-menu-width:         270px;
+
+// Navigation pulldown button
+
+$navbar-button-menu-border-color:   $gray-medium;
+
+// Breadcrumb
+
+$breadcrumb-bg:                     transparent;
+
+$breadcrumb-divider-color:          $gray;
+$breadcrumb-active-color:           $gray-darker;
+
+// Product filter
+
+$productlist-filter-background:     $gray-lighter;
+$productlist-filter-padding:        .5rem .5rem 0 .5rem;
+
+// Product list
+
+$productbox-title-min-height:       3rem;
+$productbox-title-min-height-lg:    3rem;
+
+// Product list price
+
+$productbox-price-size:             $h3-font-size;
+$productbox-price-size-list:        $h3-font-size;
+
+// Product details
+
+$image-thumbnails-width:            rem(90px);
+$product-info-border-width:         0;
+
+// Sidebar
+
+$aside-border-width:                2px 2px 2px 2px;
+$aside-border-color:                #BFE9F9;
+$aside-button-bg-color:             $black;
+$aside-button-color:                $white;
+
+// Sidebar modals
+
+$modal-sidebar-width-lg:            400px;  
+
+// Contact bar
+
+$contact-bar-background:            $cool-white;
+$contact-bar-font-size:             $h2-font-size;
+$contact-bar-font-color:            $black;
+
+// Newsletter bar
+
+$newsletter-bg:                     $accent;
+$newsletter-border-width:           1px 0;
+$newsletter-border-color:           $accent;
+
+// Footer
+
+$footer-bg-color:                   $black;
+$footer-color:                      $white;
+
+// Footer logo
+
+$footer-logo-height:                rem(18px);
+$footer-logo-height-lg:             rem(20px);
+
+$footer-social-bg:                  lighten($footer-bg-color,10%);
+
+// Copyright
+
+$copyright-bg-color:                $footer-bg-color;
+$copyright-color:                   darken($footer-color,30%);
+
+// Dailydeal
+
+$dailydeal-bg:                      $warning;
+$dailydeal-color:                   $black;
+
+// Toast message
+
+$toast-background-color:            $primary;
+$toast-header-color:                $black;
+$toast-color:                       $white;
+$toast-padding-x:                   .75rem 1rem;
+$toast-position-top:                75px;
+$toast-position-right:              5%;
+$toast-box-shadow:                  $header-box-shadow;
+
+// Set store width
+
+$container-max-widths: (
+    sm: 97vw,
+    md: 100%,
+    lg: 100%,
+    xl: 1500px
+);
+
+// Form counter
+
+$btn-counter-background:            $gray-medium;
+
+// Forms
+
+$input-bg:                          $white;
+$input-focus-border-color:          $primary;
+$input-focus-box-shadow:            none;
+$list-group-bg:                     $white;
+$list-group-disabled-bg:            $white;
+
+// Slick Slider
+
+$slider-arrow-border-radius:        0;
+
+
+// Platz für eigene Variablen in SCSS-Notation
+//
+// Alle Änderungen hier müssen anschließend mit einem SCSS-Compiler
+// (z.B. dem JTL-Theme-Editor Plugin) nach myclear.css kompiliert werden
+// --------------------------------------------------
+
+// myclear Theme
+// Hier können alle Variablen notiert werden, die nur Auswirkungen auf dieses Theme haben
+// -------------------Beginn eigene Variablen----------------------------------
+
+$badge-secondary:                   #BFE0F9;
+
+
+
+
+
+// -------------------Ende eigene Variablen----------------------------------
+
+
+// Lädt clear-Variablen des Remake-Templates
+@import '../../../../Remake/themes/clean/sass/variables';

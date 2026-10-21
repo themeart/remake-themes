@@ -1,0 +1,80 @@
+// Lädt Critical CSS aus dem Parent Template
+// Lädt Core-Funktionen
+@import '../../../../Remake/themes/base/sass/functions';
+@import "variables";
+@import "../../../../Remake/themes/clean/sass/clean_crit";
+
+// Custom styles
+@import "custom_crit";
+
+.blast {
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .product-matrix .product-matrix-title, .h3, .h4, .h5, .h6 {
+        text-transform: uppercase;
+    }
+    header {
+        @include media-breakpoint-up(lg) { 
+            background-color: $white;
+            .navbar-wrapper .navbar {
+                display: grid;
+                grid-template-columns: 1fr 0.5fr 1fr;
+            }
+            .navbar-brand {
+                margin-right: 0;
+            }
+            .navbar-nav > .nav-item {
+                > .dropdown-menu {
+                    border-top: $header-border-bottom-width solid $header-border-bottom-color;
+                    .submenu-headline-toplevel {
+			            font-weight: $font-weight-bold;
+		            }
+                }
+                
+                > .nav-link {
+                    text-transform: uppercase;
+                }
+            }
+            .toggler-logo-wrapper {
+                order: 2;
+                flex-grow: 1;
+                justify-content: center;
+            }
+            .nav-mobile-body {
+                .nav-item.link-group-item {
+                    display: none;
+                }
+            }
+        }
+        @include media-breakpoint-down(md) { 
+            box-shadow: none;
+            .nav-mobile-body {
+                width: 100%;
+            }
+        }
+    }
+    body[data-page="1"] {
+        #result-wrapper {
+            .container:nth-child(4) {
+                padding-top: map_get($spacers,7);
+                padding-bottom: map_get($spacers,7);
+                max-width: 100%;
+                background-color: $primary-lighter;
+                #tabAccordion {
+                    max-width: 1430px;
+                    margin: auto;
+                    > .card .card-header {
+                        font-size: 1.4em;
+                        padding-left: $card-spacer-x;
+                        padding-right: $card-spacer-x;
+                    }
+                }
+            }
+        }
+    }
+    #footer {
+        #footer-boxes .productlist-filter-headline,
+        .box-normal .box-normal-link {
+            font-weight: $font-weight-bold;
+            text-transform: uppercase;
+        }
+    }
+}

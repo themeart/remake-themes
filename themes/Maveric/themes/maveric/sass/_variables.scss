@@ -1,0 +1,326 @@
+// colors
+
+$accent:                            #eeeeee;
+$gray-lighter:                      #f2f2f2;
+$gray-light:                        #9b9b9b;
+$gray:                              #707070;
+$gray-dark:                         #202020;
+$gray-medium:                       #e2e2e2;
+$gray-darker:                       #525252;
+$sand:                              #ebebeb;
+$cool-white:                        #f8f8f8;
+$primary:                           #1C130C;
+$secondary:                         #E8E0DA;
+$success:                           #1C7B36;
+$bg-success:                        #cee8d1;
+$info:                              darken($primary,10%);
+$bg-info:                           #E8E0DA;
+$warning:                           #f39932;
+$bg-warning:                        #F9F2DC;
+$danger:                            #b90000;
+$bg-danger:                         #E8CCD2;
+$bg-main:                           $gray-lighter;
+$bg-main-ligther:                   $bg-main;
+$bg-config-recommendation:          lighten($primary,40%);
+
+$gold:                              #F49D1A;
+
+$white:                             #ffffff;
+$black:                             #1C130C;
+
+$primary-lighter:                   #E6E3E1;
+
+$dark:                              $gray-dark;
+$gray-100:                          $gray-lighter;
+$gray-500:                          $gray-light;
+$gray-600:                          $gray;
+$gray-700:                          $gray-dark;
+
+$text-muted:                        $gray;
+$text-muted-header:                 $text-muted;
+
+// Image ratio
+// 1 = rectangle, 1.33 = portrait
+
+$product-image-ratio:               1;
+
+// Font
+
+$font-family-sans-serif:            'Alata', sans-serif;
+$font-accent:                       $font-family-sans-serif;
+
+// Font size
+
+$font-size-base:                    rem(15px);
+$font-size-xs:                      rem(14px);
+$font-size-sm:                      rem(14px);
+$font-size-lg:                      rem(18px);
+$font-size-ribbons:                 rem(12px);
+
+$font-weight-normal:                400;
+$font-weight-semibold:              500;
+$font-weight-bold:                  600;
+
+// Links
+
+$link-color:                        $black;
+$link-decoration:                   underline;
+$link-hover-color:                  $primary;
+$link-hover-decoration:             none;
+
+// Buttons
+
+$btn-box-shadow:                    none;
+$btn-active-box-shadow:             none;
+$btn-focus-box-shadow:              none;
+
+// Inputs = Buttons
+
+$input-btn-padding-y:               rem(6px);
+$input-btn-padding-x:               rem(10px);
+
+$input-btn-padding-y-sm:            rem(3px);
+$input-btn-padding-x-sm:            rem(10px);
+
+// Button borders
+
+$border-radius:                     .25rem;
+$border-radius-lg:                  $border-radius;
+$border-radius-sm:                  $border-radius;
+
+// heading
+
+$h1-font-size:                      rem(26px);
+$h2-font-size:                      rem(22px);
+$h3-font-size:                      rem(18px);
+$h4-font-size:                      $font-size-base;
+$h5-font-size:                      $font-size-base;
+$h6-font-size:                      $font-size-base;
+
+// Layout
+
+$layout-boxed-bg-color:             $gray-lighter;
+$layout-boxed-border-width:         0 1px 0 1px;
+$layout-boxed-border-color:         $gray-medium;
+
+// Topbar
+
+$topbar-bg-color:                   $black;
+$topbar-color:                      darken($white,25%);
+$topbar-color-hover:                $white;
+$topbar-link-size:                  1em;
+
+// Header
+
+$header-bg-color:                   rgba(#2D2B2A,.15);
+$header-bg-color-affix:             rgba(#2D2B2A,.9);
+
+$header-color:                      $black;
+$header-color-hover:                $white;
+
+$header-bg-color-secondary:         $gray-lighter;
+$header-color-secondary:            $text-muted-header;
+$header-border-bottom-width:        0;
+$header-border-bottom-color:        darken($header-bg-color,10%);
+$header-box-shadow:                 none;
+
+// Logo
+
+$navbar-image-height:               rem(25px);
+$navbar-image-height-lg:            rem(30px);
+
+// Search
+
+$header-search-width:               100%;
+$header-search-bg-color:            transparent !important;
+$header-search-border-width:        1px 0 1px 1px;
+$header-search-border-color:        $gray-medium;
+$header-search-color:               $black;
+
+$header-search-btn-bg-color:        #E8E0DA;
+$header-search-btn-border-width:    1px 1px 1px 0;
+$header-search-btn-border-color:    $header-search-border-color;
+$header-search-btn-color:           $black;
+
+// Navigation
+
+$navbar-wrapper-bg-color:           transparent;
+
+$navbar-link-color:                 $black;
+$navbar-link-color-hover:           $white;
+
+$navbar-link-size:                  1em;
+$navbar-link-weight:                $font-weight-bold;
+$navbar-link-icon-size:             1.6em;
+$navbar-link-icon-size-sm:          1.4em;
+$navbar-link-stretch:               100%;
+
+$navbar-nav-link-padding-x:         .75rem;
+$navbar-nav-link-padding-y:         1.5rem;
+
+$navbar-accent-border-height:       0;
+
+// Navigation one col menu
+
+$navbar-one-col-menu-width:         270px;
+
+// Navigation pulldown button
+
+$navbar-button-menu-border-color:   $gray-medium;
+
+// Breadcrumb
+
+$breadcrumb-bg:                     transparent;
+
+$breadcrumb-divider-color:          $gray;
+$breadcrumb-active-color:           $gray-darker;
+
+// Product filter
+
+$productlist-filter-background:     $gray-lighter;
+$productlist-filter-padding:        .5rem .5rem 0 .5rem;
+
+// Product list
+
+$productbox-title-min-height:       3rem;
+$productbox-title-min-height-lg:    3rem;
+
+// Product list price
+
+$productbox-price-size:             $font-size-base;
+
+// Product details
+
+$image-thumbnails-width:            rem(90px);
+$product-info-border-width:         0;
+
+// Sidebar
+
+$aside-border-width:                1px 1px 1px 1px;
+$aside-border-color:                $bg-info;
+$aside-border-splitter:             $bg-info;
+
+// Sidebar modals
+
+$modal-sidebar-width-lg:            400px;  
+
+// Contact bar
+
+$contact-bar-background:            $cool-white;
+$contact-bar-font-size:             $h2-font-size;
+$contact-bar-font-color:            $black;
+
+// Newsletter bar
+
+$newsletter-bg:                     $black;
+$newsletter-color:                  $white;
+$newsletter-border-width:           0 0;
+$newsletter-border-color:           $bg-info;
+$newsletter-padding:                1.5rem;
+
+// Footer
+
+$footer-bg-color:                   $bg-info;
+$footer-color:                      lighten($black,15%);
+$footer-color-hover:                $primary;
+$footer-headings-color:             $black;
+$footer-headings-size:              $h3-font-size;
+
+// Footer logo
+
+$footer-logo-height:                rem(18px);
+$footer-logo-height-lg:             rem(20px);
+
+$footer-social-bg:                  darken($bg-info,5%);
+
+// Copyright
+
+$copyright-bg-color:                $white;
+$copyright-color:                   $black;
+
+// Dailydeal
+
+$dailydeal-bg:                      $warning;
+$dailydeal-color:                   $black;
+
+// Toast message
+
+$toast-background-color:            $primary;
+$toast-header-color:                $black;
+$toast-color:                       $white;
+$toast-padding-x:                   .75rem 1rem;
+$toast-position-top:                75px;
+$toast-position-right:              5%;
+$toast-box-shadow:                  $header-box-shadow;
+
+// Set store width
+
+$container-max-widths: (
+    sm: 97vw,
+    md: 100%,
+    lg: 100%,
+    xl: 1470px
+);
+
+// Form counter
+
+$btn-counter-background:            $gray-medium;
+
+// Lines
+
+$hr-border-width:                   1px;
+$hr-border-color:                   $bg-info;
+$border-width:                      $hr-border-width;
+
+// Tabs
+
+$nav-tabs-border-radius:            $border-radius;
+
+$tab-navigation-border-width:       0;
+$tab-navigation-border-color:       $hr-border-color;
+$tab-navigation-bg-color:           lighten($tab-navigation-border-color,10%);
+
+$tab-content-border-width:          $tab-navigation-border-width;
+$tab-content-bg-color:              lighten($hr-border-color,5%);
+
+// inputs
+
+$input-btn-padding-y:               rem(10px);
+$input-btn-padding-x:               rem(15px);
+$input-btn-padding-y-sm:            rem(6px);
+$input-btn-padding-x-sm:            rem(10px);
+
+// Forms
+
+$input-bg:                          $white;
+$input-focus-border-color:          $primary;
+$input-focus-box-shadow:            none;
+$list-group-bg:                     $white;
+$list-group-disabled-bg:            $white;
+
+// tables
+
+$table-accent-bg:             transparent;
+
+
+// Platz für eigene Variablen in SCSS-Notation
+//
+// Alle Änderungen hier müssen anschließend mit einem SCSS-Compiler
+// (z.B. dem JTL-Theme-Editor Plugin) nach myclear.css kompiliert werden
+// --------------------------------------------------
+
+// myclear Theme
+// Hier können alle Variablen notiert werden, die nur Auswirkungen auf dieses Theme haben
+// -------------------Beginn eigene Variablen----------------------------------
+
+
+
+
+
+
+
+// -------------------Ende eigene Variablen----------------------------------
+
+
+// Lädt clear-Variablen des Remake-Templates
+@import '../../../../Remake/themes/clean/sass/variables';

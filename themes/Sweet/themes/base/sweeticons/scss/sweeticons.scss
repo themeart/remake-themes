@@ -1,0 +1,43 @@
+@import "variables";
+
+@font-face {
+  font-family: 'Sweeticons';
+  src: url("#{$si-font-path}/sweeticons.woff?vudazn") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.fa-shopping-cart,
+.fa-question-circle,
+.fa-heart,
+.fa-user {
+  font-family: 'Sweeticons' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-question-circle {
+  &:before {
+    content: "\e900" !important;
+  }
+}
+.fa-heart {
+  &:before {
+    content: "\e901" !important;
+  }
+}
+.fa-shopping-cart {
+  &:before {
+    content: "\e902" !important;
+  }
+}
+.fa-user {
+  &:before {
+    content: "\e903" !important;
+  }
+}

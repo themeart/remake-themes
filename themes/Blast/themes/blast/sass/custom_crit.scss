@@ -1,0 +1,21 @@
+// Lädt Critical CSS aus dem Namu
+
+@include media-breakpoint-up(lg) { 
+    .double-view {
+        &.row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .double-first-row {
+            display: flex;
+            justify-content: end;
+        }
+        .double-second-row {
+            display: flex;
+            justify-content: start;
+        }
+        .half-row {
+            width: calc(#{map-get($container-max-widths, xl) / 2} - 3.5rem);
+        }
+    }
+}

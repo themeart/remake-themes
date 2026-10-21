@@ -1,0 +1,5 @@
+.nav-link[aria-expanded="true"] .text-cart::after,
+.accordion .menu[aria-expanded="true"]::after,
+.dropdown-toggle[aria-expanded="true"]::after {
+	transform: rotate(180deg);
+}

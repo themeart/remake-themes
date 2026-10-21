@@ -1,0 +1,288 @@
+// colors
+
+$accent:                            #eeeeee;
+$gray-lighter:                      #f2f2f2;
+$gray-light:                        #9b9b9b;
+$gray:                              #707070;
+$gray-dark:                         #202020;
+$gray-medium:                       #dddddd;
+$gray-darker:                       #525252;
+$sand:                              #ebebeb;
+$cool-white:                        #f8f8f8;
+$primary:                           #19AF59;
+$secondary:                         #cccccc;
+$success:                           #1C7B36;
+$bg-success:                        #cee8d1;
+$info:                              #111111;
+$bg-info:                           $gray-medium;
+$warning:                           #f39932;
+$bg-warning:                        #F9F2DC;
+$danger:                            #b90000;
+$bg-danger:                         #E8CCD2;
+$bg-main:                           $gray-lighter;
+$bg-main-ligther:                   $bg-main;
+$bg-config-recommendation:          lighten($primary,40%);
+
+$dark-blue:                         #425A8B;
+$darker-blue:                       #0E224D;
+
+$gold:                              #F49D1A;
+
+$white:                             #ffffff;
+$black:                             #111111;
+
+$primary-lighter:                   #EDEEEE;
+
+$dark:                              $gray-dark;
+$gray-100:                          $gray-lighter;
+$gray-500:                          $gray-light;
+$gray-600:                          $gray;
+$gray-700:                          $gray-dark;
+
+$text-muted:                        lighten($black,25%);
+$text-muted-header:                 $text-muted;
+
+$yiq-text-dark:                     $black;
+$yiq-text-light:                    $white;
+
+// Lines
+
+$hr-border-width:                   1px;
+$hr-border-color:                   $gray-medium;
+$border-width:                      $hr-border-width;
+
+// Image ratio
+// 1 = rectangle, 1.33 = portrait
+
+$product-image-ratio:               1;
+
+// Font size
+
+$font-size-base:                    rem(15px);
+$font-size-xs:                      rem(14px);
+$font-size-sm:                      rem(14px);
+$font-size-lg:                      rem(18px);
+$font-size-ribbons:                 rem(12px);
+
+// Text
+
+$headings-color:                    $black;
+$body-color:                        $black;
+
+// Links
+
+$link-color:                        $black;
+$link-decoration:                   underline;
+$link-hover-color:                  $primary;
+$link-hover-decoration:             none;
+
+// Buttons
+
+$btn-box-shadow:                    none;
+$btn-active-box-shadow:             none;
+$btn-focus-box-shadow:              none;
+
+// Inputs = Buttons
+
+$input-btn-padding-y:               rem(6px);
+$input-btn-padding-x:               rem(10px);
+
+$input-btn-padding-y-sm:            rem(3px);
+$input-btn-padding-x-sm:            rem(10px);
+
+// Button borders
+
+$border-radius:                     .125rem;
+$border-radius-lg:                  $border-radius;
+$border-radius-sm:                  $border-radius;
+
+// heading
+
+$h1-font-size:                      rem(26px);
+$h2-font-size:                      rem(22px);
+$h3-font-size:                      rem(18px);
+$h4-font-size:                      $font-size-base;
+$h5-font-size:                      $font-size-base;
+$h6-font-size:                      $font-size-base;
+
+// Topbar
+
+$topbar-bg-color:                   $primary;
+$topbar-color:                      $white;
+$topbar-color-hover:                $white;
+$topbar-link-size:                  .95em;
+
+// Header
+
+$header-bg-color:                   #FDFDFD;
+$header-color:                      $black;
+$header-color-hover:                $primary;
+
+$header-bg-color-secondary:         $gray-lighter;
+$header-color-secondary:            $text-muted-header;
+$header-border-bottom-width:        1px;
+$header-border-bottom-color:        $gray-medium;
+$header-box-shadow:                 none;
+
+// Logo
+
+$navbar-image-height:               rem(25px);
+$navbar-image-height-lg:            rem(23px);
+
+// Search
+
+$header-search-width:               100%;
+$header-search-bg-color:            $white;
+$header-search-border-width:        1px 0 1px 1px;
+$header-search-border-color:        $black;
+$header-search-color:               $black;
+
+$header-search-btn-bg-color:        $header-search-bg-color;
+$header-search-btn-border-width:    1px 1px 1px 0;
+$header-search-btn-border-color:    $header-search-border-color;
+$header-search-btn-color:           $body-color;
+
+// Navigation
+
+$navbar-wrapper-bg-color:           $header-bg-color;
+
+$navbar-link-color:                 $header-color;
+$navbar-link-size:                  1.1em;
+
+$navbar-accent-border-height:       0;
+
+$navbar-link-icon-size:             1.4em;
+$navbar-link-icon-size-sm:          1.4em;
+
+$navbar-nav-link-padding-x:         .75rem;
+$navbar-nav-link-padding-y:         1.75rem;
+
+// Navigation one col menu
+
+$navbar-one-col-menu-width:         270px;
+
+// Breadcrumb
+
+$breadcrumb-bg:                     $sand;
+
+$breadcrumb-divider-color:          $gray;
+$breadcrumb-active-color:           $gray-darker;
+
+// Product filter
+
+$productlist-filter-background:     $primary-lighter;
+$productlist-filter-padding:        .5rem .5rem 0 .5rem;
+
+// Product list
+
+$productbox-title-min-height:       2rem;
+$productbox-title-min-height-lg:    3rem;
+
+// Product details
+
+$image-thumbnails-width:            rem(90px);
+
+// Tabs
+
+$tab-navigation-border-width:           $border-width;
+$tab-navigation-border-color:           $hr-border-color;
+
+$tab-navigation-padding:                .5rem 1.5rem !default;
+$tab-navigation-bg-color:               $primary-lighter;
+
+$tab-content-border-color:              $hr-border-color;
+$tab-content-border-width:              $border-width;
+
+// Sidebar
+
+$aside-border-width:                1px 1px 1px 1px;
+$aside-border-color:                $secondary;
+
+// Sidebar modals
+
+$modal-sidebar-width-lg:            400px;  
+
+// Contact bar
+
+$contact-bar-background:            $cool-white;
+$contact-bar-font-size:             $h3-font-size;
+$contact-bar-font-color:            $black;
+
+// Newsletter bar
+
+$newsletter-bg:                     $darker-blue;
+$newsletter-border-width:           0 0;
+$newsletter-border-color:           $darker-blue;
+$newsletter-padding:                2rem 0;
+
+// Footer
+
+$footer-bg-color:                   $black;
+$footer-headings-color:             $white;
+$footer-color:                      darken($white,20%);
+
+// Footer logo
+
+$footer-logo-height:                rem(18px);
+$footer-logo-height-lg:             rem(23px);
+
+$footer-social-bg:                  darken($footer-bg-color,7%);
+
+// Copyright
+
+$copyright-bg-color:                $white;
+$copyright-color:                   darken($footer-color,45%);
+
+// Toast message
+
+$toast-background-color:            $primary;
+$toast-header-color:                $black;
+$toast-color:                       $white;
+$toast-padding-x:                   .75rem 1rem;
+$toast-position-top:                75px;
+$toast-position-right:              5%;
+$toast-box-shadow:                  $header-box-shadow;
+
+// Set store width
+
+$container-max-widths: (
+    sm: 97vw,
+    md: 100%,
+    lg: 100%,
+    xl: 1430px
+);
+
+// Form counter
+
+$btn-counter-background:            $gray-medium;
+
+// Forms
+
+$input-bg:                          $gray-lighter;
+$input-bg-counter:                  $input-bg;
+$input-border-color:                #767676;
+
+$input-btn-padding-x:               rem(12px);
+
+
+// Platz für eigene Variablen in SCSS-Notation
+//
+// Alle Änderungen hier müssen anschließend mit einem SCSS-Compiler
+// (z.B. dem JTL-Theme-Editor Plugin) nach myclear.css kompiliert werden
+// --------------------------------------------------
+
+// myclear Theme
+// Hier können alle Variablen notiert werden, die nur Auswirkungen auf dieses Theme haben
+// -------------------Beginn eigene Variablen----------------------------------
+
+
+$newsletter-color:                  $white;
+
+
+
+
+// -------------------Ende eigene Variablen----------------------------------
+
+
+// Lädt clear-Variablen des Remake-Templates
+@import '../../../../Remake/themes/clean/sass/variables';

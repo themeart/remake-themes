@@ -1,0 +1,295 @@
+// colors
+
+$accent:                            darken(#FFE3E8,2%);
+$gray-lighter:                      #f2f2f2;
+$gray-light:                        #9b9b9b;
+$gray:                              #707070;
+$gray-dark:                         #202020;
+$gray-medium:                       #ebebeb;
+$gray-darker:                       #525252;
+$sand:                              #ebebeb;
+$cool-white:                        #f8f8f8;
+$primary:                           #F23D5A;
+$secondary:                         darken($accent,10%);
+$success:                           #1C7B36;
+$bg-success:                        #cee8d1;
+$info:                              #000;
+$bg-info:                           #FFE3E8;
+$warning:                           #f39932;
+$bg-warning:                        #F9F2DC;
+$danger:                            #b90000;
+$bg-danger:                         #E8CCD2;
+$bg-main:                           $gray-lighter;
+$bg-main-ligther:                   $bg-main;
+$bg-config-recommendation:          lighten($primary,40%);
+
+$gold:                              #F49D1A;
+
+$white:                             #ffffff;
+$black:                             #000000;
+
+$yiq-text-dark:                     $black;
+$yiq-text-light:                    $gray-lighter;
+
+$primary-lighter:                   #FFE3E8;
+
+$dark:                              $gray-dark;
+$gray-100:                          $gray-lighter;
+$gray-500:                          $gray-light;
+$gray-600:                          $gray;
+$gray-700:                          $gray-dark;
+
+$text-muted:                        $gray;
+$text-muted-header:                 $text-muted;
+
+// Image ratio
+// 1 = rectangle, 1.33 = portrait
+
+$product-image-ratio:               1;
+
+// Font size
+
+$font-size-base:                    rem(15px);
+$font-size-xs:                      rem(14px);
+$font-size-sm:                      rem(14px);
+$font-size-lg:                      rem(18px);
+$font-size-ribbons:                 rem(12px);
+
+// Links
+
+$link-color:                        $black;
+$link-decoration:                   underline;
+$link-hover-color:                  $primary;
+$link-hover-decoration:             none;
+
+// Buttons
+
+$btn-box-shadow:                    none;
+$btn-active-box-shadow:             none;
+$btn-focus-box-shadow:              none;
+
+// Inputs = Buttons
+
+$input-border-color:                darken($secondary,8%);
+
+$input-btn-padding-y:               rem(10px);
+$input-btn-padding-x:               rem(14px);
+
+$input-btn-padding-y-sm:            rem(3px);
+$input-btn-padding-x-sm:            rem(10px);
+
+// Button borders
+
+$border-radius:                     .025rem;
+$border-color:                      $black;
+$border-radius-lg:                  $border-radius;
+$border-radius-sm:                  $border-radius;
+
+// heading
+
+$h1-font-size:                      rem(26px);
+$h2-font-size:                      rem(22px);
+$h3-font-size:                      rem(18px);
+$h4-font-size:                      $font-size-base;
+$h5-font-size:                      $font-size-base;
+$h6-font-size:                      $font-size-base;
+
+// Topbar
+
+$topbar-bg-color:                   $primary;
+$topbar-color:                      $white;
+$topbar-color-hover:                $primary-lighter;
+$topbar-link-size:                  1em;
+
+// Header
+
+$header-bg-color:                   $white;
+$header-color:                      $black;
+$header-color-hover:                $primary;
+
+$header-bg-color-secondary:         $gray-lighter;
+$header-color-secondary:            $text-muted-header;
+$header-border-bottom-width:        1px;
+$header-border-bottom-color:        #eee;
+$header-box-shadow:                 0 0.125rem 1rem 0.125rem rgba($black,.06);
+
+// Logo
+
+$navbar-image-height:               rem(30px);
+$navbar-image-height-lg:            rem(40px);
+
+// Search
+
+$header-search-width:               600px;
+$header-search-bg-color:            $white;
+$header-search-border-width:        1px 1px 1px 1px;
+$header-search-border-color:        $black;
+$header-search-color:               $black;
+
+$header-search-btn-bg-color:        $header-search-bg-color;
+$header-search-btn-border-width:    $header-search-border-width;
+$header-search-btn-border-color:    $header-search-border-color;
+$header-search-btn-color:           $black;
+
+// Navigation
+
+$navbar-wrapper-bg-color:           $header-bg-color;
+
+$navbar-link-color:                 $header-color;
+$navbar-link-size:                  1.2em;
+
+$navbar-link-icon-size:             1.7em;
+$navbar-link-icon-size-sm:          1.4em;
+
+$navbar-link-hover-bg-color:        $primary;
+$navbar-link-hover-color:           $white;
+
+$navbar-nav-link-padding-x:         .75rem;
+$navbar-nav-link-padding-y:         1rem;
+
+// Navigation one col menu
+
+$navbar-one-col-menu-width:         270px;
+
+// Breadcrumb
+
+$breadcrumb-bg:                     transparent;
+
+$breadcrumb-divider-color:          $gray;
+$breadcrumb-active-color:           $gray-darker;
+
+// Product filter
+
+$productlist-filter-background:     $gray-lighter;
+$productlist-filter-padding:        .5rem .5rem 0 .5rem;
+
+// Product list
+
+$productbox-title-min-height:       2rem;
+$productbox-title-min-height-lg:    3rem;
+
+$productbox-desc-min-height:        3rem;
+
+// Product list price
+
+$productbox-price-size:             $font-size-base;
+
+// Product details
+
+$product-info-border-color:         $accent;
+$product-info-border-width:         0;
+$image-thumbnails-width:            rem(90px);
+
+// Sidebar
+
+$aside-bg-color:                    lighten($primary-lighter,3%);
+$aside-border-width:                0 0 2px 0;
+$aside-border-color:                darken($aside-bg-color,5%);
+
+// Sidebar modals
+
+$modal-sidebar-width-lg:            400px;  
+
+// Contact bar
+
+$contact-bar-background:            #FBC8D1;
+$contact-bar-font-size:             $h2-font-size;
+$contact-bar-font-color:            $black;
+
+// Newsletter bar
+
+$newsletter-bg:                     $accent;
+$newsletter-border-width:           1px 0;
+$newsletter-border-color:           $accent;
+
+// Footer
+
+$footer-bg-color:                   $black;
+$footer-color:                      darken($white,30%);
+$footer-headings-color:             $white;
+
+// Footer logo
+
+$footer-logo-height:                rem(25px);
+$footer-logo-height-lg:             rem(35px);
+
+$footer-social-bg:                  #FBC8D1;
+
+// Copyright
+
+$copyright-bg-color:                $footer-bg-color;
+$copyright-color:                   $footer-color;
+
+// Dailydeal
+
+$dailydeal-bg:                      $warning;
+$dailydeal-color:                   $black;
+
+// Toast message
+
+$toast-background-color:            $primary;
+$toast-header-color:                $black;
+$toast-color:                       $white;
+$toast-padding-x:                   .75rem 1rem;
+$toast-position-top:                75px;
+$toast-position-right:              5%;
+$toast-box-shadow:                  $header-box-shadow;
+
+// Set store width
+
+$container-max-widths: (
+    sm: 97vw,
+    md: 100%,
+    lg: 100%,
+    xl: 1430px
+);
+
+// Form counter
+
+$btn-counter-background:            $bg-info;
+$input-bg-counter:                  $cool-white;
+$counter-border-color:              transparent;    
+
+// Forms
+
+$input-bg:                          $white;
+$input-focus-border-color:          $primary;
+$input-focus-box-shadow:            none;
+$list-group-bg:                     $white;
+$list-group-disabled-bg:            $white;
+
+// ribbons
+
+//SPECIALOFFERS, 2
+$ribbon-bg-2:                       $primary;
+$ribbon-color-2:                    $white;
+
+//NEWPRODUCTS, 3
+$ribbon-bg-3:                       #0EBEB2;
+$ribbon-color-3:                    $white;
+
+$ribbon-bg-10:                      transparent;
+$ribbon-color-10:                   #7D7D7D;
+
+
+// Platz für eigene Variablen in SCSS-Notation
+//
+// Alle Änderungen hier müssen anschließend mit einem SCSS-Compiler
+// (z.B. dem JTL-Theme-Editor Plugin) nach myclear.css kompiliert werden
+// --------------------------------------------------
+
+// myclear Theme
+// Hier können alle Variablen notiert werden, die nur Auswirkungen auf dieses Theme haben
+// -------------------Beginn eigene Variablen----------------------------------
+
+
+
+
+
+
+
+// -------------------Ende eigene Variablen----------------------------------
+
+
+// Lädt clear-Variablen des Remake-Templates
+@import '../../../../Remake/themes/clean/sass/variables';

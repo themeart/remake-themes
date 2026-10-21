@@ -1,0 +1,151 @@
+// Lädt Critical CSS aus dem Parent Template
+// Lädt Core-Funktionen
+@import '../../../../Remake/themes/base/sass/functions';
+@import "variables";
+@import "../../../../Remake/themes/clean/sass/clean_crit";
+
+// Custom styles
+@import "custom_crit";
+
+// -- theme specific ---
+
+.robotic {
+    .background-size {
+        &.cover {
+            background-size: cover;
+        }
+        &.contain {
+            background-size: contain;
+        }
+    }
+    .newsbox-headline,
+    .productbox-title {
+        > a {
+            font-size: 1.1em;
+        }
+    }
+    /*.slick-arrow,
+    .carousel:not(.slick-initialized).slick-type-category::before,
+    .carousel:not(.slick-initialized).slick-type-category::after,
+    .carousel:not(.slick-initialized).slick-type-product::before,
+    .carousel:not(.slick-initialized).slick-type-product::after {
+        opacity: 1;
+        border-radius: 0;
+    }*/
+    .badge-secondary {
+        color: $black;
+        background-color: $badge-secondary;
+    }
+    header {
+        .fa-sup {
+            display: none;
+        }
+        @include media-breakpoint-up(lg) {
+            .navbar-collapse {
+                flex-grow: 0;
+            }
+            #shop-nav {
+                flex-grow: 1;
+            }
+            .search-wrapper {
+                flex: max-content;
+            }
+        }
+        @include media-breakpoint-up(lg) {
+            border-top: $header-border-bottom-width solid $header-border-bottom-color;
+            #search {
+                background-color: lighten($header-bg-color,3%) !important;
+                flex-grow: 1;
+                .form-control::placeholder {
+                    color: $header-search-color;
+                }
+            }
+            .dropdown-menu:not(.categories-recursive-dropdown) {
+                border-bottom: 3px solid $primary;
+            }
+            .navbar-brand {
+                margin-right: map-get($spacers, 5);
+                padding-top: map-get($spacers, 2);
+                padding-bottom: map-get($spacers, 2);
+            }
+        }
+        @include media-breakpoint-up(md) {
+            .nav-right > div {
+                &::before {
+                    border-left: 1px solid darken($header-bg-color,10%);
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            .toggler-logo-wrapper {
+                position: relative;
+                &::before {
+                    border-right: 1px solid darken($header-bg-color,10%);
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            .button-menu {
+                padding-left: map-get($spacers, 2);
+                padding-right: map-get($spacers, 2);
+            }
+            .nav-right {
+                .search .search-wrapper .form-control {
+                    height: auto;
+                    padding-top: $navbar-nav-link-padding-y;
+                    padding-bottom: $navbar-nav-link-padding-y;
+                }
+                > div {
+                    position: relative;
+                    padding-left: map-get($spacers, 2);
+                    padding-right: map-get($spacers, 2);
+                }
+                .account-icon-dropdown {
+        			 .nav-label {
+                        display: inline-block;
+                    }
+        		}
+            }
+        }
+    }
+    #footer #copyright {
+        border-top-color: lighten($footer-bg-color, 10%);
+    }
+    .footer-logo {
+        filter: invert(100%);
+    }
+    @include media-breakpoint-up(lg) {
+        .sidepanel-left {
+            .box {
+                border: 0;
+                padding-left: 0;
+                margin-bottom: 0;
+                .btn-filter-box {
+                    background-color: $aside-button-bg-color;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    color: $aside-button-color;
+                    width: 100%;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .collapse,
+                .collapsing {
+                    padding: 0 map-get($spacers, 2);
+                }
+            }
+            .card > .card-body {
+                padding: map-get($spacers, 3);
+                border-width: $aside-border-width;
+                border-style: solid;
+                border-color: $aside-border-color;
+            }
+        }
+    }
+}

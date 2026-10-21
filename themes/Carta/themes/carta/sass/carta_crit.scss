@@ -1,0 +1,117 @@
+// Lädt Critical CSS aus dem Parent Template
+// Lädt Core-Funktionen
+@import '../../../../Remake/themes/base/sass/functions';
+@import "variables";
+@import "../../../../Remake/themes/clean/sass/clean_crit";
+
+// Custom styles
+@import "custom_crit";
+
+.carta {
+    .breadcrumb-wrapper {
+        display: none;
+    }
+    header {
+        #shop-nav-position {
+            .nav-link > i {
+                font-size: $navbar-link-icon-size-sm;
+                @include media-breakpoint-up(lg) { 
+                    font-size: $navbar-link-icon-size;
+                }
+            }
+        }
+        .search-wrapper {
+            .form-control {
+                height: calc(1.5em + 0.75rem + ($hr-border-width * 2));
+            }
+        }
+        @include media-breakpoint-up(lg) { 
+            .navbar-wrapper nav.navbar {
+                padding: $navbar-padding;
+            }
+            .cart-icon-dropdown::before {
+                border-left: 0;
+                width: 0;
+            }
+        }
+    }
+    @include media-breakpoint-down(md) { 
+        #main-wrapper {
+            margin-top: map_get($spacers,3);
+        }
+    }
+    .fixed-mobile-carta {
+        position: sticky;
+        top: $header-height-mobile;
+        background-color: $body-bg;
+        z-index: 3;
+    }
+    .nav-mobile-carta {
+        .navbar-nav {
+            flex-direction: row;
+        }
+        &.nav-scrollbar .nav-scrollbar-inner {
+            flex-direction: row;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: auto;
+            align-self: flex-start;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    }
+    @include media-breakpoint-down(md) { 
+        .productlist-page-nav-header-m {
+            position: relative;
+            top: 0;
+            z-index: 0;
+        }
+    }
+    /*@include media-breakpoint-up(lg) { 
+        #content .container {
+            padding: 0 map_get($spacers,6);
+        }
+    }*/
+    .title {
+        text-align: center;
+        padding: map_get($spacers,3);
+        h1,.h2 {
+            margin-bottom: 0;
+        }
+    }
+    .productlist-item-info {
+        color: $text-muted;
+        padding: map_get($spacers,3);
+    }
+    @include media-breakpoint-up(lg) { 
+        .product-detail {
+            .product-info {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .hr-sect-line, 
+    #footer .productlist-filter-headline {
+        margin-bottom: .75rem;
+        &::after {
+            height: 0;
+        }
+    }
+    #footer {
+        background-color: transparent;
+        border-top: 0;
+        #footer-boxes {
+            /*@include media-breakpoint-up(lg) { 
+                margin: 0 map_get($spacers,6);
+            }*/
+            background-color: $footer-bg-color;
+            padding: map_get($spacers,4);
+            border-radius: $border-radius;
+        }
+        @include media-breakpoint-up(lg) { 
+            #copyright {
+                margin-top: map_get($spacers,3);
+            }
+        }
+    }
+}

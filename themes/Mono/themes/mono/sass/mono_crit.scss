@@ -1,0 +1,35 @@
+// Lädt Critical CSS aus dem Parent Template
+// Lädt Core-Funktionen
+@import '../../../../Remake/themes/base/sass/functions';
+@import "variables";
+@import "../../../../Remake/themes/clean/sass/clean_crit";
+
+// Custom styles
+@import "custom_crit";
+
+
+.mono {
+    header {
+        @include media-breakpoint-up(lg) { 
+            .navbar-wrapper {
+                padding-top: map_get($spacers, 1);
+                padding-bottom: map_get($spacers, 3);
+            }
+            .navbar-nav > .nav-item {
+                &:not(:last-child) {
+                    padding-right: map_get($spacers, 1);
+                }
+                &.active,
+                &:hover {
+                    > .nav-link {
+                        box-shadow: $aside-box-shadow;
+                    }
+                }
+                > .nav-link {
+                    border-radius: $border-radius;
+                    text-transform: $footer-headings-transform;
+                }
+            }
+        }
+    }
+}

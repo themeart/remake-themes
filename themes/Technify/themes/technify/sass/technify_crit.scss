@@ -1,0 +1,165 @@
+// Lädt Critical CSS aus dem Parent Template
+// Lädt Core-Funktionen
+@import '../../../../Remake/themes/base/sass/functions';
+@import "variables";
+@import "../../../../Remake/themes/clean/sass/clean_crit";
+
+// Custom styles
+@import "custom_crit";
+
+// -- theme specific ---
+
+.technify {
+    @include media-breakpoint-up(lg) {
+        header {
+            &.menu-middle {
+                #mainNavigation {
+                    margin-left: $layout-grid-padding - .7rem;
+                }
+                .menu-center-center {
+                    .nav-mobile-body,
+                    .nav-scrollbar {
+                        justify-content: left !important;
+                    }
+                }
+            }
+
+            > .navbar-wrapper {
+                .navbar {
+                    height: 70px;
+                }
+                > .container-fluid {
+                    padding-left: 0;
+                    padding-right: $layout-grid-padding;
+                }
+            }
+            .toggler-logo-wrapper {
+                height: calc(100% + #{$header-border-bottom-width});
+                min-width: $navbar-one-col-menu-width;
+                max-width: $navbar-one-col-menu-width;
+                background-color: $aside-bg-color;
+                padding-left: $layout-grid-padding;
+                padding-right: $layout-grid-padding;
+                border-bottom: $header-border-bottom-width solid lighten($aside-bg-color,5%);
+                margin-bottom: -#{$header-border-bottom-width};
+            }
+        }
+        #content-wrapper:not(.has-fluid) {
+            padding-top: 0;
+        }
+        .breadcrumb-wrapper {
+            > .container-fluid {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+        #content {
+            padding-bottom: 0;
+            .sidepanel-left {
+                min-width: $navbar-one-col-menu-width;
+                max-width: $navbar-one-col-menu-width;
+                background-color: lighten($aside-bg-color, 2%);
+                padding-right: $layout-grid-padding !important;
+                padding-left: $layout-grid-padding;
+                > .inner {
+                    padding-top: $layout-grid-padding / 2;
+                    padding-bottom: $layout-grid-padding / 2;
+                }
+                .btn-outline-primary,
+                .btn-outline-secondary {
+                    &:not(:hover) {
+                        color: $aside-text-color;
+                    }
+                }
+                .box {
+                    padding-left: 0;
+                    padding-right: 0;
+                    color: $aside-link-color;
+                    .btn-filter-box {
+                        width: 100%;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                    .btn-filter-box, 
+                    .productlist-filter-headline {
+                        font-size: $h3-font-size;
+                        color: $aside-link-color;
+                    }
+                    .filter-item,
+                    .productbox-title,
+                    .productbox-title > a,
+                    .nav a {
+                        font-weight: $font-weight-normal;
+                        color: $aside-text-color;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                    &.box-categories {
+                        .dropdown .collapse, 
+                        .box-linkgroup .dropdown .collapse {
+                            background: lighten($aside-bg-color, 4%);
+                        }
+                        .nav-item:not(:last-of-type) {
+                            border-bottom: 0;
+                        }
+                    }
+                }
+            }
+            > .row {
+                > .col-lg-8 {
+                    padding-right: $layout-grid-padding;
+                    padding-left: $layout-grid-padding;
+                    padding-bottom: $layout-grid-padding;
+                    &.ml-auto-util {
+                        width: calc(100% - #{$navbar-one-col-menu-width}) !important;
+                        max-width: max-content !important;
+                        flex: auto;
+                    }
+                } 
+            }
+        }
+        #consent-settings-btn {
+            left: $layout-grid-padding;
+        }
+        .smoothscroll-top {
+            left: $layout-grid-padding + 4rem;
+            bottom: 1rem !important;
+        }
+
+    }
+    #footer {
+        position: relative;
+        > .container-fluid {
+            padding-right: $layout-grid-padding;
+            padding-left: $layout-grid-padding;
+        }
+        #footer-boxes {
+            > .col:first-of-type {
+                padding-right: $layout-grid-padding + 2rem;
+                min-width: $navbar-one-col-menu-width;
+                max-width: $navbar-one-col-menu-width;
+                color: $aside-text-color;
+                .productlist-filter-headline {
+                    color: $aside-link-color;
+                }
+            }
+        }
+        &::before {
+            border-top: $header-border-bottom-width solid lighten($aside-bg-color,5%);
+            content: '';
+            background-color: $aside-bg-color;
+            width: $navbar-one-col-menu-width;
+            height: 100%;
+            position: absolute;
+            top: -1px;
+            left: 0;
+        }
+        #copyright {
+            > .container-fluid {
+                padding-right: $layout-grid-padding;
+                padding-left: rem($navbar-one-col-menu-width) + $layout-grid-padding;
+            }
+        }
+    }
+}

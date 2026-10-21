@@ -1,0 +1,209 @@
+//
+// Platz für eigene Style Angaben in SCSS-Notation
+//
+// Alle Änderungen hier müssen anschließend mit einem SCSS-Compiler
+// (z.B. dem JTL-Theme-Editor Plugin) nach myclear.css kompiliert werden
+// --------------------------------------------------
+
+// Lädt Core-Funktionen
+@import '../../../../Remake/themes/base/sass/functions';
+
+// Lädt "myclear"-Variablen. Hier können Variablen aus Bootstrap und dem clear-Theme überschrieben werden.
+@import 'variables';
+
+// Lädt Style Angaben des clear-Themes
+@import '../../../../Remake/themes/clean/sass/allstyles';
+
+// myclear Theme
+// Hier können alle Style-Angaben notiert werden, die nur Auswirkungen auf dieses Theme haben
+// -----------------------------------------------------
+
+
+// Workarounds
+#paypal-button-productDetails-container {
+    z-index: 10;
+}
+.variations .dropdown-menu {
+    max-height: 300px;
+    z-index: 13;
+}
+
+.mono {
+    .fa-sup {
+        background-color: $white;
+        padding: .35em .5em;
+        border-radius: $border-radius;
+        color: $black;
+        border: 1px solid $black;
+    }
+    
+    .opc-UniSlider {
+        .square-image {
+            border-radius: $border-radius;
+        }
+        .inner-wrapper {
+            background-color: rgba($white,.8);
+            border-radius: $border-radius;
+            padding: 1rem;
+            margin: -1rem;
+        }
+        .product-wrapper:hover {
+            .inner-wrapper {
+                background-color: rgba($black,.8);
+                color: $white;
+            }
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        .breadcrumb-wrapper .row,
+        .super-slider,
+        .details-form-inner,
+        .tab-navigation.horizontal,
+        .x-sell,
+        .x-related,
+        .container-inner.border.rounded,
+        .cart-summary,
+        .basket_wrapper,
+        .basket-customer-who-bought,
+        .checkout-register-form,
+        .stepper.checkout-steps,
+        .checkout-shipping-form,
+        .checkout-existing-customer .card,
+        .checkout-confirmation .card,
+        .confirmation-form-content-inner-check,
+        #order-proceed-as-guest,
+        .last-seen {
+            border: 1px solid $gray-medium;
+            border-radius: $border-radius;
+            box-shadow: $aside-box-shadow;
+        }
+        .last-seen,
+        .tab-navigation.horizontal,
+        .x-sell,
+        .x-related,
+        .cart-summary,
+        .basket_wrapper,
+        .basket-customer-who-bought,
+        .checkout-register-form,
+        .checkout-shipping-form,
+        .checkout-existing-customer .card,
+        .checkout-confirmation .card,
+        .confirmation-form-content-inner-check,
+        #order-proceed-as-guest,
+        .details-form-inner {
+            padding: map_get($spacers, 4);
+        }
+        .last-seen,
+        .x-sell,
+        .x-related,
+        .tab-navigation,
+        .checkout-existing-customer .card,
+        .confirmation-form-content-inner-check,
+        .details-form-inner {
+            margin-bottom: map_get($spacers, 5) !important;
+        }
+        .breadcrumb-wrapper .row {
+            .breadcrumb {
+                padding-left: map_get($spacers, 3);
+            }
+        }
+        .recommendations,
+        .checkout-confirmation .checkout-confirmation-legal-notice,
+        .recommendations .slick-slider-other.is-not-opc {
+            margin-top: 0;
+        }
+        .tab-navigation .nav-tabs .nav-item:not(:last-child) {
+            margin-right: map_get($spacers, 2);
+        }
+        .tab-content,
+        .basket .basket-items,
+        .shipping-calculator-form,
+        .basket-customer-who-bought,
+        .checkout-shipping-form .checkout-steps,
+        .checkout-confirmation .checkout-confirmation-legal-notice,
+        .snippets-checkbox-wrapper,
+        .product-detail.mb-lg-5 {
+            margin-bottom: 0 !important;
+        }
+        .modal.show .modal-sidebar.right {
+            right: map_get($spacers, 3);
+        }
+        .modal-dialog.modal-sidebar {
+            height: calc(100vh - 2rem);
+            top: map_get($spacers, 3);
+            bottom: map_get($spacers, 3);
+            right: map_get($spacers, 3);
+            > .modal-content {
+                height: calc(100vh - 2rem);
+            }
+        }
+        .sidepanel-left .box {
+            box-shadow: $aside-box-shadow;
+        }
+    }
+    .alert.purchase-info {
+        margin-top: map_get($spacers, 3);
+    }
+    .newsbox-headline,
+    .productbox-title { 
+        font-size: $productbox-title-font-size;
+    }
+    .checkout-confirmation .col .card {
+        height: calc(100% - 1.5rem);
+    }
+    @include media-breakpoint-down(lg) {
+        header .nav-mobile-body .navbar-nav > .nav-item.active > .nav-link {
+            color: $navbar-link-color-hover;
+        }
+    }
+}
+.inc-shipping-address {
+    border-top: 1px solid $gray-medium;
+    margin-top: map_get($spacers, 4);
+    padding-top: map_get($spacers, 4);
+}
+.variations {
+    .form-row > .col, 
+    .form-row > [class*="col-"] {
+        padding-left: 0;
+    }
+}
+.slick-arrow,
+.slick-arrow:hover {
+    background-color: $black;
+    color: $white;
+    border-radius: $border-radius;
+}
+.tab-navigation {
+    :not(.vertical) .nav-link.active::after {
+        height: 0;
+    }
+    .nav-link { 
+		&.active, 
+		&:hover {
+		    border-color: $black !important;
+		    border-radius: $border-radius;
+		}
+    }
+}
+
+.background-size-cover {
+    background-size: cover;
+}
+section.super-section {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  right: 4rem;
+  bottom: 2rem;
+}
+.super-section-inner {
+  background-color: rgba($white,0.5);
+  border-radius: $border-radius;
+  color: $black;
+  @include media-breakpoint-up(lg) { 
+    width: 35%;
+  }
+}

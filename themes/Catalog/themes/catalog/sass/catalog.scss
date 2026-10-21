@@ -1,0 +1,41 @@
+//
+// Platz für eigene Style Angaben in SCSS-Notation
+//
+// Alle Änderungen hier müssen anschließend mit einem SCSS-Compiler
+// (z.B. dem JTL-Theme-Editor Plugin) nach myclear.css kompiliert werden
+// --------------------------------------------------
+
+// Lädt Core-Funktionen
+@import '../../../../Remake/themes/base/sass/functions';
+
+// Lädt "myclear"-Variablen. Hier können Variablen aus Bootstrap und dem clear-Theme überschrieben werden.
+@import 'variables';
+
+// Lädt Style Angaben des clear-Themes
+@import '../../../../Remake/themes/clean/sass/allstyles';
+
+// myclear Theme
+// Hier können alle Style-Angaben notiert werden, die nur Auswirkungen auf dieses Theme haben
+// -----------------------------------------------------
+
+
+/* theme settings */
+@include media-breakpoint-up(lg) {
+    header .nav-right .nav-label {
+      display: inline-block;
+    }
+}
+aside {
+    .box {
+        &.box-categories {
+            .nav-item:not(:last-of-type) {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.newsletter-wrapper,
+.newsletter-wrapper a:not(.btn) {
+  color: $newsletter-color;
+}

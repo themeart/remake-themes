@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Template isFullResponsive="true">
+    <Name>Offer</Name>
+    <Author>Themeart GmbH</Author>
+    <URL>https://www.themeart.de</URL>
+    <Parent>Remake</Parent>
+    <MinShopVersion>5.2.2</MinShopVersion>
+    <Version>1.0.0</Version>
+    <Preview>preview.png</Preview>
+    <Description>Das Offer Theme ist ein Angebotswarenkorb ohne Anzeige der Preise. <![CDATA[<br><a href="https://www.themeart.de" target="_blank" rel="nofollow">Erstellt mit <i class="fa fa-heart"></i> von Themeart</a>]]></Description>
+    <Framework>Bootstrap4</Framework>
+    <Settings>
+        <Section Name="Theme" Key="theme">
+            <Setting Description="Theme" Key="theme_default" Type="select" Value="offer" Editable="true" override="true">
+                <Option Value="offer">Offer</Option>
+            </Setting>
+        </Section>
+    </Settings>
+    <Minify>
+        <CSS Name="offer.css">
+            <File Path="themes/offer/offer.css"/>
+            <File Path="themes/offer/custom.css"/>
+        </CSS>
+    </Minify>
+    <Boxes>
+        <Container Position="left" Available="1"></Container>
+        <Container Position="right" Available="0"></Container>
+        <Container Position="top" Available="0"></Container>
+        <Container Position="bottom" Available="1"></Container>
+    </Boxes>
+</Template>

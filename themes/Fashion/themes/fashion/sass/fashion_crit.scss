@@ -1,0 +1,111 @@
+// Lädt Critical CSS aus dem Parent Template
+// Lädt Core-Funktionen
+@import '../../../../Remake/themes/base/sass/functions';
+@import "variables";
+@import "../../../../Remake/themes/clean/sass/clean_crit";
+
+// Custom styles
+@import "custom_crit";
+
+.fashion {
+    .topbar-wrapper {
+        .topbar-note {
+            font-weight: $font-weight-bold;
+        }
+    }
+    header {
+        @include media-breakpoint-up(lg) { 
+            background-color: $white;
+            .navbar-brand {
+                margin-right: 0;
+            }
+            .navbar-nav > .nav-item.active:not(.show) > .nav-link {
+                &:before {
+                    bottom: 35%;
+                }
+            }
+            .navbar-nav > .nav-item {
+                > .dropdown-menu {
+                    border-top: $header-border-bottom-width solid $header-border-bottom-color;
+                    .submenu-headline-toplevel {
+			            font-weight: $font-weight-bold;
+			            &:hover {
+			                border: 1px solid $topbar-bg-color;
+                            padding: map_get($spacers, 3);
+                            border-radius: $border-radius;
+			            }
+		            }
+                }
+                
+                > .nav-link {
+                    text-transform: uppercase;
+                    &.dropdown-toggle:not(.filter-toggler)::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+        @include media-breakpoint-down(md) { 
+            box-shadow: none;
+            .nav-mobile-body {
+                width: 100%;
+            }
+        }
+    }
+    .categories-section {
+        .brand-wrapper {
+            .img-fluid {
+                border-radius: 50%;
+            }
+            &:hover {
+                padding: map_get($spacers,2);
+                .item-slider-desc {
+                    font-weight: $font-weight-bold;
+                }
+            }
+        }
+    }
+    .product-box {
+        text-align: $product-box-text-align;
+        .manufacturer + .productbox-title {
+            margin-top: 0;
+        }
+    }
+    .newsbox-headline, 
+    .productbox-title {
+        font-size: $productbox-title-font-size;
+    }
+    .newsletter-wrapper {
+        background-color: transparent;
+        margin-bottom: map_get($spacers, 7);
+        padding: 0;
+        .newsletter-inner {
+            background-color: $newsletter-bg;
+        }
+        .newsletter-inner-box {
+            padding: $newsletter-padding;
+            @include media-breakpoint-up(lg) { 
+                padding: $newsletter-padding * 2;
+            }
+        }
+    }
+    
+    #footer {
+        .productlist-filter-headline::after {
+            height: 0;
+        }
+        #footer-boxes {
+            .newsletter-footer .btn-primary {
+		        background-color: $footer-social-bg;
+		    }
+            .newsletter-footer .btn-primary,
+		    .footer-social-media a.btn {
+    			color: $footer-social-media-color;
+    			&:hover {
+    				color: $footer-social-media-color-hover;
+    			}
+		    }
+        }
+    }
+    
+}

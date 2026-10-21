@@ -1,0 +1,104 @@
+// Lädt Critical CSS aus dem Parent Template
+// Lädt Core-Funktionen
+@import '../../../../Remake/themes/base/sass/functions';
+@import "variables";
+@import "../../../../Remake/themes/clean/sass/clean_crit";
+
+.woolly {
+    h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6,
+    .newsbox-headline, 
+    .productbox-title{
+        text-transform: $headings-transform;
+    }
+    .newsbox-headline, 
+    .productbox-title {
+        font-size: 1.3em;
+    }
+    .carousel-indicators li {
+        width: 15px;
+        height: 15px;
+        border-radius: $btn-border-radius-lg;
+        border-top: 0;
+        border-bottom: 0;
+        &.active {
+            background-color: $black;
+        }
+    }
+    .tabs-round {
+        .nav-tabs {
+            justify-content: center;
+            .nav-item:not(:last-child) {
+                margin-right: map-get($spacers, 3);
+            }
+            .nav-link {
+                border-radius: $btn-border-radius-lg;
+            }
+        }
+        .tab-content {
+            border: 0;
+        }
+    }
+    @include media-breakpoint-up(lg) { 
+        header {
+            .navbar-nav > .nav-item {
+                &.active > .nav-link,
+                > .nav-link:hover {
+                    color: $navbar-link-hover-color;
+                }
+                > .nav-link {
+                    text-transform: $navbar-link-transform;
+                }
+                &.active:not(.show) > .nav-link::before {
+                    bottom: $navbar-link-active-line-height;
+                }
+            }
+            .nav-right > .nav-item > .nav-link:hover {
+                color: $navbar-link-hover-color;
+            }
+    
+        }
+    }
+    .tab-content {
+        border-left-width: 0;
+        border-right-width: 0;
+    }
+    .tab-navigation {
+        .nav-link {
+            text-transform: $tab-navigation-link-trasform;
+            &.active {
+                background-color: $primary-lighter;
+                border-bottom-color: $tab-navigation-border-color !important;
+            }
+        }
+        &:not(.vertical) .nav-link.active::after {
+            height: 0;
+        }
+    }
+    .newsletter-wrapper {
+        .info {
+            font-family: $font-accent;
+        }
+        .input-group > .input-group-append {
+            margin-left: -#{$btn-border-radius};
+            > .btn {
+                border-top-left-radius: $btn-border-radius;
+                border-bottom-left-radius: $btn-border-radius;
+            }
+        }
+    }
+    .hr-sect-line,
+    #footer .productlist-filter-headline {
+        &::after {
+            height: 0;
+        }
+    }
+    #footer .productlist-filter-headline {
+        margin-bottom: map-get($spacers, 3);
+    }
+    #copyright {
+		border-top-color: $copyright-line-color;
+    }
+}
+
+// Custom styles
+@import "custom_crit";

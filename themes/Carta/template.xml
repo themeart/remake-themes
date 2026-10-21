@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Template isFullResponsive="true">
+    <Name>Carta</Name>
+    <Author>Themeart GmbH</Author>
+    <URL>https://www.themeart.de</URL>
+    <Parent>Remake</Parent>
+    <MinShopVersion>5.5.0</MinShopVersion>
+    <Version>1.0.0</Version>
+    <Preview>preview.png</Preview>
+    <Description>Das Carta Theme agiert als Speisekarte. <![CDATA[<br><a href="https://www.themeart.de" target="_blank" rel="nofollow">Erstellt mit <i class="fa fa-heart"></i> von Themeart</a>]]></Description>
+    <Framework>Bootstrap4</Framework>
+    <Settings>
+        <Section Name="Theme" Key="theme">
+            <Setting Description="Theme" Key="theme_default" Type="select" Value="carta" Editable="true" override="true">
+                <Option Value="carta">Carta</Option>
+            </Setting>
+        </Section>
+        <Section Name="Dropdowns" Key="dropdowns">
+            <Setting Description="Tischreservierung-Darstellung" Key="position_type" Type="select" Value="dropdown">
+                <Option Value="dropdown">als Dropdown</Option>
+                <Option Value="modal">als Modal</Option>
+                <Option Value="modal-sidebar">als Sidebar</Option>
+            </Setting>
+        </Section>
+    </Settings>
+    <Minify>
+        <CSS Name="carta.css">
+            <File Path="themes/carta/carta.css"/>
+            <File Path="themes/carta/custom.css"/>
+        </CSS>
+    </Minify>
+    <Boxes>
+        <Container Position="left" Available="1"></Container>
+        <Container Position="right" Available="0"></Container>
+        <Container Position="top" Available="0"></Container>
+        <Container Position="bottom" Available="1"></Container>
+    </Boxes>
+</Template>
